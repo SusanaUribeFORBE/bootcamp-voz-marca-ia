@@ -3,7 +3,15 @@
 Caso de ejemplo: **Fonda Doña Pola**, restaurante ficticio de comida
 antioqueña en Laureles, Medellín.
 
-## 1. Apertura — el problema (30 seg)
+Tiempo total estimado: **~4 min** (rango 3-5 min, ver desglose por sección).
+
+## 1. Apertura — el problema y la promesa (20-30 seg)
+
+Arrancar con el mensaje de valor, casi textual:
+
+> "Elimina el bloqueo creativo y ahorra horas a la semana: automatiza el
+> marketing de tu negocio con contenido listo para publicar, adaptado a tus
+> canales y fiel a tu marca."
 
 Una pyme como una fonda de barrio no tiene equipo de marketing, ni tiempo
 para sentarse a pensar contenido todas las semanas. Lo que sí tiene es una
@@ -13,15 +21,17 @@ identidad en contenido consistente, semana tras semana, en varios canales a
 la vez.
 
 **Voz de Marca IA** resuelve eso: usted define su marca una sola vez, y la
-app genera ideas, textos adaptados a cada canal, y un calendario de
-publicación — siempre con la misma voz.
+app genera ideas, textos adaptados a cada canal, un calendario de
+publicación y hasta piezas gráficas listas para publicar — siempre con la
+misma voz.
 
 ## 2. Recorrido en vivo por las 4 pestañas (1.5-2 min)
 
 1. **Perfil de marca**: mostrar el perfil ya cargado de Fonda Doña Pola
    (tono, valores, público, canales con su frecuencia, restricciones como
-   "no urgencia falsa" y "no promesas de salud"). Este perfil es la única
-   vez que alguien tiene que "explicarle" la marca a la IA.
+   "no urgencia falsa" y "no promesas de salud", además del color de marca
+   y el logo). Este perfil es la única vez que alguien tiene que
+   "explicarle" la marca a la IA.
 2. **Ideas**: generar un lote de ideas nuevas en vivo. Señalar arriba de la
    pantalla la **métrica de tiempo ahorrado** (`⏱️ Tiempo ahorrado`, con el
    expander "¿Cómo se calcula esto?" mostrando la tabla de supuestos —
@@ -29,12 +39,18 @@ publicación — siempre con la misma voz.
    **✓ Consistente con la marca** o **⚠️ Revisar: ...** que aparece tras la
    validación automática.
 3. **Copies**: elegir una idea y uno o más canales, generar el texto y
-   mostrar el mismo badge de consistencia en cada copy.
+   mostrar el mismo badge de consistencia en cada copy. Sobre uno de los
+   copies (ej. Instagram), click en **🎨 Generar pieza gráfica**: en el
+   momento se arma una imagen 1080x1080 con el color de marca, el logo de
+   Fonda Doña Pola y el título de la idea — por plantilla, sin IA de
+   imágenes, 100% reproducible — lista para descargar en `.png`. Es la
+   cuarta salida de la app: no solo texto, también la pieza visual lista
+   para subir.
 4. **Calendario**: generar el calendario y descargar el `.ics`, mencionando
    que respeta la frecuencia por canal definida en el perfil y nunca agenda
    más de una pieza el mismo día (sostenible para una sola persona).
 
-## 3. (a) Comparación lado a lado: misma idea, tres canales
+## 3. (a) Comparación lado a lado: misma idea, tres canales (30-45 seg)
 
 Idea: **"Así nace su bandeja paisa frente a sus ojos"** — generada una sola
 vez, adaptada a tres formatos distintos sin perder tono ni valores.
@@ -85,7 +101,7 @@ formato: Instagram es corto y con hashtags, WhatsApp es una invitación
 directa y personal, Blog desarrolla la historia completa. Nadie tuvo que
 volver a explicarle a la IA quién es Doña Pola para el tercer texto.
 
-## 4. (b) ¿Por qué esto no es lo mismo que pedirle a ChatGPT?
+## 4. (b) ¿Por qué esto no es lo mismo que pedirle a ChatGPT? (30-45 seg)
 
 - **El perfil de marca se define una vez y se reutiliza en cada llamada**:
   no hay que copiar y pegar el tono, los valores y las restricciones cada
@@ -95,12 +111,15 @@ volver a explicarle a la IA quién es Doña Pola para el tercer texto.
   define "Instagram 3 veces por semana, WhatsApp 2 veces", y un algoritmo
   determinista arma las fechas sin repetir día — eso no es "pedir un
   calendario" en un chat, es una restricción de negocio ya resuelta.
+- **La pieza gráfica sale lista para publicar, sin abrir otra herramienta**:
+  mismo color de marca y logo en cada imagen, sin tener que describirle el
+  branding a un generador de imágenes cada vez.
 - **Todo queda versionado y guardado en el repo/carpeta del negocio**: el
   perfil, las ideas, los copies y el calendario persisten entre sesiones —
   nada se pierde al cerrar la pestaña, y se puede retomar el trabajo días
   después exactamente donde quedó.
 
-## 5. (c) El toque paisa/Medellín
+## 5. (c) El toque paisa/Medellín (20-30 seg)
 
 El perfil de marca no es un formulario genérico de "tono: amigable" — incluye
 ejemplos reales de cómo habla el negocio ("parcero", "quiubo", referencias a
@@ -111,10 +130,13 @@ acento y su propia forma de invitar a la gente a la mesa. Ese nivel de
 autenticidad local es exactamente lo que un prompt genérico en ChatGPT no
 sostiene de forma consistente entre 8 ideas y 6 copies distintos.
 
-## 6. Cierre (30 seg)
+## 6. Cierre (20-30 seg)
 
 En menos de un minuto por pieza, el dueño de la fonda tiene ideas, textos
-listos para publicar en tres canales, y un calendario descargable —
-manteniendo su propia voz, no una genérica. Próximos pasos naturales:
-edición manual de una idea/copy puntual desde la UI, y soporte para más de
-un negocio activo a la vez en la misma sesión.
+listos para publicar en tres canales, una pieza gráfica con su marca y un
+calendario descargable — manteniendo su propia voz, no una genérica. Eso es
+justamente la promesa: **eliminar el bloqueo creativo y ahorrar horas a la
+semana, con contenido listo para publicar, adaptado a cada canal y fiel a la
+marca**. Próximos pasos naturales: edición manual de una idea/copy puntual
+desde la UI, y soporte para más de un negocio activo a la vez en la misma
+sesión.
