@@ -1,0 +1,66 @@
+[
+  {
+    "titulo": "Así nace su bandeja paisa frente a sus ojos",
+    "angulo": "Video corto mostrando la cocina a la vista mientras se prepara una bandeja paisa, resaltando que no hay atajos ni prisa en la sazón heredada de Doña Pola.",
+    "canal_sugerido": "Instagram",
+    "objetivo": "engagement",
+    "consistente": true,
+    "motivo": "Resalta la cocina a la vista y la sazón heredada sin apuro, coherente con el valor de tradición familiar."
+  },
+  {
+    "titulo": "El menú del día ya llegó directico de la plaza",
+    "angulo": "Mensaje diario o semanal contando qué trajo la plaza hoy y qué plato se armó con eso, invitando a reservar o pasar por el almuerzo ejecutivo.",
+    "canal_sugerido": "WhatsApp",
+    "objetivo": "venta",
+    "consistente": true,
+    "motivo": "Comunica el menú del día basado en la plaza, sin urgencia falsa ni promesas indebidas."
+  },
+  {
+    "titulo": "Doña Pola: la mujer detrás del sancocho",
+    "angulo": "Artículo que cuenta la historia real de la fundadora, cómo aprendió las recetas de su mamá y por qué decidió abrir la fonda en Laureles, para reforzar el valor de tradición familiar.",
+    "canal_sugerido": "Blog",
+    "objetivo": "awareness",
+    "consistente": true,
+    "motivo": "Refuerza la historia real de Doña Pola y el valor de recetas familiares transmitidas por generaciones."
+  },
+  {
+    "titulo": "Conozca a quienes siembran lo que usted come",
+    "angulo": "Carrusel o video presentando a los campesinos del Oriente antioqueño que surten los ingredientes, mostrando el compromiso con lo local más allá de una frase publicitaria.",
+    "canal_sugerido": "Instagram",
+    "objetivo": "awareness",
+    "consistente": true,
+    "motivo": "Visibiliza a los productores locales, alineado con el diferenciador de ingredientes de campesinos del Oriente."
+  },
+  {
+    "titulo": "Reserve la mesa comunal para el domingo familiar",
+    "angulo": "Invitación directa a agrupar a la familia en las mesas comunales del fin de semana, apelando a la costumbre de compartir sancocho en grande.",
+    "canal_sugerido": "WhatsApp",
+    "objetivo": "venta",
+    "consistente": true,
+    "motivo": "Invita a la mesa comunal familiar sin presión de venta agresiva ni urgencia falsa."
+  },
+  {
+    "titulo": "Por qué el menú cambia según lo que trae la plaza",
+    "angulo": "Artículo explicativo sobre la filosofía de cocinar con ingredientes de temporada, educando al lector sobre por qué eso significa mejor sabor y apoyo a los productores locales.",
+    "canal_sugerido": "Blog",
+    "objetivo": "engagement",
+    "consistente": true,
+    "motivo": "Educa sobre la filosofía de temporada sin prometer beneficios de salud, solo sabor y apoyo local."
+  },
+  {
+    "titulo": "Aquí no es un pedido, es su nombre el que llamamos",
+    "angulo": "Publicación con testimonios o mini-historias de clientes habituales a quienes ya conocen por su nombre, mostrando el trato de casa que diferencia a la fonda.",
+    "canal_sugerido": "Instagram",
+    "objetivo": "engagement",
+    "consistente": true,
+    "motivo": "Muestra el trato cercano y personalizado que es un valor central de la marca."
+  },
+  {
+    "titulo": "Su almuerzo ejecutivo con sazón de abuela lo espera",
+    "angulo": "Mensaje directo entre semana recordando el horario de almuerzo ejecutivo y animando a reservar o encargar, resaltando rapidez sin perder la calidad casera.",
+    "canal_sugerido": "WhatsApp",
+    "objetivo": "venta",
+    "consistente": false,
+    "motivo": "Prometer 'rapidez' contradice el valor de que la sazón 'no se apura, se hereda', generando una inconsistencia de mensaje."
+  }
+]

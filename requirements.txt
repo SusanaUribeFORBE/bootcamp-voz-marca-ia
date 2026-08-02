@@ -1,0 +1,6 @@
+streamlit>=1.38
+anthropic>=0.40
+python-dotenv>=1.0
+icalendar>=5.0
+Pillow>=10.1
+pytest>=8.0

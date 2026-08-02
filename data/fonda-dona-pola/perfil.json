@@ -1,0 +1,52 @@
+{
+  "nombre_negocio": "Fonda Doña Pola",
+  "descripcion_corta": "Restaurante de comida antioqueña con toque moderno, en el barrio Laureles, Medellín. Cocina a la vista, recetas de la abuela con ingredientes locales.",
+  "tono": [
+    "cercano",
+    "cálido",
+    "con humor paisa moderado",
+    "orgulloso de lo local"
+  ],
+  "valores": [
+    "Ingredientes locales y de temporada, comprados a productores de la región",
+    "Recetas familiares transmitidas por generaciones",
+    "Trato como en casa: se conoce al cliente por su nombre",
+    "Comida honesta, sin pretensiones, bien hecha"
+  ],
+  "publico_objetivo": "Adultos de 28 a 55 años en Medellín (especialmente Laureles, Belén, El Poblado), que valoran comida tradicional bien hecha, buscan un lugar para almuerzo ejecutivo entre semana y para compartir en familia los fines de semana.",
+  "diferenciadores": [
+    "Bandeja paisa y sancocho con receta de la fundadora, Doña Pola",
+    "Ingredientes comprados directamente a campesinos de Oriente antioqueño",
+    "Ambiente familiar: mesas comunales para compartir",
+    "Menú del día cambia según lo que esté fresco en la plaza"
+  ],
+  "canales": [
+    {
+      "nombre": "Instagram",
+      "frecuencia_semana": 3
+    },
+    {
+      "nombre": "WhatsApp",
+      "frecuencia_semana": 1
+    },
+    {
+      "nombre": "Blog",
+      "frecuencia_semana": 0.25
+    }
+  ],
+  "restricciones": [
+    "No usar groserías ni doble sentido",
+    "No prometer beneficios de salud (ej. \"adelgaza\", \"detox\")",
+    "No usar tono agresivo de venta ni urgencia falsa (\"últimas horas\", \"corran\")",
+    "No burlarse de otras cocinas o restaurantes de la competencia",
+    "No usar anglicismos innecesarios (preferir español claro y paisa)"
+  ],
+  "ejemplos_frases": [
+    "Aquí la sazón no se apura, se hereda.",
+    "Como en la mesa de la abuela, pero con la cuenta de hoy.",
+    "Lo que hoy trajo la plaza, hoy está en su plato.",
+    "Parcero, este sancocho es pa' compartir, no pa' comer solo."
+  ],
+  "logo_path": "C:\\Users\\sgsst\\Documents\\bootcamp-voz-marca-ia\\data\\fonda-dona-pola\\logo.png",
+  "color_marca": "#8B4A2B"
+}
