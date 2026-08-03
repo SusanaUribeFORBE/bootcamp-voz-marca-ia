@@ -6,6 +6,40 @@ construido con Claude (Anthropic) y Streamlit.
 > Proyecto hecho para un reto de bootcamp. El negocio de ejemplo, **Fonda
 > Doña Pola**, es **ficticio** — no corresponde a ninguna empresa real.
 
+## ¿Qué es y qué problema resuelve?
+
+**¿Qué es?** Una aplicación web sencilla que funciona como asistente de
+marketing para un negocio pequeño: a partir de la información de la marca,
+genera ideas de contenido, textos listos para publicar y hasta un calendario
+de publicaciones — todo con ayuda de IA (Claude), pero manteniendo siempre la
+misma voz de marca.
+
+**¿Qué problema resuelve?** Las pymes casi nunca tienen tiempo ni un equipo
+de marketing dedicado para mantener presencia constante en redes sociales. El
+resultado suele ser contenido esporádico, con un tono que cambia de una
+publicación a otra, o directamente la ausencia de publicaciones. Esta
+herramienta reduce esa fricción: en minutos, el dueño del negocio tiene un
+mes de contenido planeado, redactado y listo para publicar, sin perder la
+voz que identifica a su marca.
+
+**¿Para quién es?** Para dueños o encargados de marketing de pequeños y
+medianos negocios (el caso de uso de ejemplo es un restaurante colombiano)
+que necesitan generar contenido de redes sociales de forma rápida y
+consistente, sin conocimientos técnicos ni presupuesto para contratar una
+agencia.
+
+**¿Cómo se usa?** En cuatro pasos, dentro de una interfaz web (no requiere
+instalar nada más que abrir el navegador):
+
+1. Se define el perfil de la marca una sola vez (tono, valores, público,
+   canales).
+2. Se generan ideas de contenido con un clic.
+3. Se convierten esas ideas en textos listos para cada red social, e incluso
+   en una imagen lista para publicar.
+4. Se arma un calendario de publicaciones y se descarga para importarlo al
+   calendario que ya use el negocio (Google Calendar, Outlook, Apple
+   Calendar).
+
 ## ¿Qué hace?
 
 A partir de un **perfil de marca** (tono, valores, público, canales,
@@ -126,6 +160,30 @@ pytest tests/ -v
 
 Ver [`docs/decisiones.md`](docs/decisiones.md) para el detalle de cada
 decisión de arquitectura y las alternativas descartadas.
+
+## Reflexión del proceso
+
+Durante el desarrollo me encontré con algunos problemas reales que tuve que
+resolver:
+
+- **Compatibilidad con perfiles guardados**: al agregar los campos
+  `logo_path` y `color_marca` al perfil de marca, un perfil viejo ya guardado
+  en disco (de antes de ese cambio) rompía al cargarlo porque no tenía esos
+  campos. Lo corregí dándoles valores por defecto y agregué tests de
+  regresión para asegurarme de que los perfiles antiguos siguieran cargando
+  sin error.
+- **Seguridad en comandos de terminal**: dos veces durante el desarrollo el
+  asistente de IA marcó advertencias de seguridad al ejecutar comandos de
+  terminal — una vez por un patrón que podía ocultar código, y otra por
+  sintaxis de shell demasiado compleja para auditar de un vistazo. En ambos
+  casos rechacé el comando y pedí una versión más simple y explícita,
+  priorizando poder revisar exactamente qué se iba a ejecutar antes de
+  correrlo.
+- **Tildes y ñ rotas en las piezas gráficas**: las imágenes generadas
+  mostraban las tildes y la ñ como caracteres rotos, porque la fuente por
+  defecto no tenía soporte completo para español. Lo corregí usando una
+  fuente TTF con soporte de acentos y agregué tests que verifican
+  específicamente el renderizado correcto de tildes y ñ.
 
 ## Limitaciones conocidas (alcance del MVP)
 
