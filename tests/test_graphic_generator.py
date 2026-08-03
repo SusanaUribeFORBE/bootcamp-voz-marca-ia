@@ -3,7 +3,7 @@ import io
 from PIL import Image
 
 from src.brand_profile import BrandProfile
-from src.graphic_generator import CANVAS_SIZE, generate_graphic
+from src.graphic_generator import CANVAS_SIZE, FONT_SIZE, _cargar_fuente, generate_graphic
 
 
 def _perfil_base(**kwargs) -> BrandProfile:
@@ -49,3 +49,36 @@ def test_titulo_vacio_no_rompe_generacion():
 
     imagen = Image.open(io.BytesIO(imagen_bytes))
     assert imagen.size == (CANVAS_SIZE, CANVAS_SIZE)
+
+
+def test_titulo_con_tildes_y_ene_no_rompe_generacion():
+    perfil = _perfil_base()
+    imagen_bytes = generate_graphic(
+        perfil, "Así nace la bandeja paisa en Doña Pola, señor(a)"
+    )
+
+    imagen = Image.open(io.BytesIO(imagen_bytes))
+    assert imagen.size == (CANVAS_SIZE, CANVAS_SIZE)
+
+
+def test_cargar_fuente_mide_correctamente_tildes_y_ene():
+    fuente = _cargar_fuente(FONT_SIZE)
+
+    bbox = fuente.getbbox("Ñoño camión café")
+
+    assert bbox is not None
+    ancho = bbox[2] - bbox[0]
+    alto = bbox[3] - bbox[1]
+    assert ancho > 0
+    assert alto > 0
+
+
+def test_fondo_es_degradado_no_color_solido():
+    perfil = _perfil_base(color_marca="#8B4A2B")
+    imagen_bytes = generate_graphic(perfil, "")
+
+    imagen = Image.open(io.BytesIO(imagen_bytes)).convert("RGB")
+    color_arriba = imagen.getpixel((5, 5))
+    color_abajo = imagen.getpixel((5, CANVAS_SIZE - 5))
+
+    assert color_arriba != color_abajo
