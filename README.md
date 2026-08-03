@@ -6,6 +6,8 @@ construido con Claude (Anthropic) y Streamlit.
 > Proyecto hecho para un reto de bootcamp. El negocio de ejemplo, **Fonda
 > Doña Pola**, es **ficticio** — no corresponde a ninguna empresa real.
 
+📹 **[Ver video demo](https://drive.google.com/file/d/1T3uyqivqQlLhQ-Bjiu7wE30H5nnrI_RU/view)**
+
 ## ¿Qué es y qué problema resuelve?
 
 **¿Qué es?** Una aplicación web sencilla que funciona como asistente de
